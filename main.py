@@ -23,6 +23,7 @@ def hello(name=None):
   api = InstagramAPI(access_token=access_token)
   pickles, next = api.tag_recent_media(10, 0, "pickle")
 
+  # TODO: Better pickle selection, reduce duplicates
   choice_pickle = choice(pickles)
   # Truncate long captions
   pickle_caption = choice_pickle.caption.text.lower()
