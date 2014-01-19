@@ -15,7 +15,6 @@ from instagram.client import InstagramAPI
 from random import choice
 
 @app.route('/')
-@app.route('/<name>')
 def hello(name=None):
   """ Return hello template at application root URL."""
   # TODO: Move to environment variable
@@ -38,4 +37,6 @@ def hello(name=None):
 
   return render_template('hello.html', caption=pickle_caption, username=pickle_user, link=pickle_link, image=pickle_image_link)
 
-
+@app.errorhandler(404)
+def page_not_found(e):
+  return render_template('error.html'), 404

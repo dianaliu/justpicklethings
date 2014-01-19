@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+  <link rel=stylesheet type="text/css" href="{{ url_for('static', filename='css/app.css') }}">
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <style>
+    .error-container {
+      margin: 0 auto;
+      width: 1024px;
+      height: 683px;
+      padding-top: 80px;
+      background-image: url('{{ url_for('static', filename='img/error.jpg') }}');
+      background-position: center center;
+      background-repeat: no-repeat;
+      text-align: center;
+      font-size: 1.5em;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <title>Just Pickle Things</title>
+
+  <div class="error-container">
+    <h1>This can't be right!</h1>
+    <h2><a href="/">Let's start over.</a></h2>
+  </div>
+
+  <!-- Picture is from http://www.flickr.com/photos/bzedan/5100123999/ -->
+
+</body>
+</html>
