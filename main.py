@@ -20,7 +20,7 @@ def hello(name=None):
   # TODO: Move to environment variable
   access_token = "995294683.26174be.94f2626419534650812cf5ed542d5a9d"
   api = InstagramAPI(access_token=access_token)
-  pickles, next = api.tag_recent_media(10, 0, "pickle")
+  pickles, next = api.tag_recent_media(30, 0, "pickle")
 
   # TODO: Better pickle selection, reduce duplicates
   choice_pickle = choice(pickles)
