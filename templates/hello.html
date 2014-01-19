@@ -1,12 +1,24 @@
 <!doctype html>
 <html>
-  <body>
-    <title>Just Pickle Things</title>
-    <h1>#justpicklethings</h1>
-    {% if name %}
-      <h1>Hello {{ name }}!</h1>
-    {% else %}
-      <h1>Hello World!</h1>
-    {% endif %}
-  </body>
+<head>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/app.css') }}">
+  <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <title>Just Pickle Things</title>
+
+  <div class="pickle_image_container" style="background-image: url('{{ image }}')">
+    <div class="pickle_title_container">
+      <h1 class="pickle_tag">#justpicklethings</h1>
+      <p class="attribution">instagram // <a href="{{ link }}">@{{ username }}</a></p>
+    </div>
+
+    <p class="caption">{{ caption }}</p>
+  </div>
+
+  <footer>
+    <p>pickled by <a href="https://twitter.com/dianagliu">@dianagliu</a></p>
+  </footer>
+
+</body>
 </html>

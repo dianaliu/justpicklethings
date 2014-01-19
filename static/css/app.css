@@ -1,0 +1,52 @@
+body {
+  color: white;
+  background-color: #7DA00E;
+  text-shadow:2px 2px 4px #000000;
+  /*background-image: url('../img/pickle_things.jpg');*/
+  background-image: url('../img/pickle.png');
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  text-shadow: none;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.pickle_image_container {
+  width: 640px;
+  height: 640px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin: 0px auto;
+  border: 5px solid white;
+}
+
+.pickle_title_container {
+  margin: 10px;
+}
+
+.pickle_tag {
+  margin: 0px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.caption {
+  padding: 5px;
+  font-family: Georgia, serif;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.attribution {
+  font-family: "Courier New", Courier, monospace;
+  /*text-shadow:2px 2px 4px #000000;*/
+  margin: 0px;
+  font-size: .8em;
+}
+
