@@ -18,8 +18,8 @@ from random import choice
 @app.route('/<name>')
 def hello(name=None):
   """ Return hello template at application root URL."""
-  # TODO: Set up separate account for #justpicklethings
-  access_token = "46268358.26174be.936f60ef309d4414bc6e9e9fb60a92eb"
+  # TODO: Move to environment variable
+  access_token = "995294683.26174be.94f2626419534650812cf5ed542d5a9d"
   api = InstagramAPI(access_token=access_token)
   pickles, next = api.tag_recent_media(10, 0, "pickle")
 
