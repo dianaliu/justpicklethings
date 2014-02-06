@@ -24,7 +24,7 @@ def index():
   choice_pickle = choice(pickles)
 
   # Truncate long captions
-  pickle_caption = choice_pickle.caption.text.lower()
+  pickle_caption = choice_pickle.caption.text.lower() if choice_pickle.caption else ''
   pickle_caption = (pickle_caption[:110] + "...") if len(pickle_caption) > 110 else pickle_caption
 
   pickle_link = choice_pickle.link
